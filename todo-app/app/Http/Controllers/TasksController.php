@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Task; // Добавляем импорт класса Task
+use App\Models\Task; // Добавляю импорт класса Task
 
 class TasksController extends Controller
 {
@@ -26,7 +26,7 @@ class TasksController extends Controller
 
     public function store(Request $request){
         $request->validate([
-            'description' => 'required', // Указываем, что поле 'description' обязательно
+            'description' => 'required', // Указываю, что поле 'description' обязательно
         ]);
     
         $task = Task::create([
